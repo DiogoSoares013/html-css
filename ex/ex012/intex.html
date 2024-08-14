@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexendo com midias</title>
+    <style>
+        body{
+            background-color: dimgrey;
+        }
+        div{
+            margin-left: 300px;
+        }
+        h1{
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Inserindo videos hospedados localmente</h1>
+        <p>este video esta hospedado no meu proprio servidor.</p>
+        
+        <video controls width="500" height="315" poster="imagens/foto.jpeg">
+            <source src="midia/video.mp4" type="video/mp4">
+            <source src="midia/Video2.mp4" type="video/mp4">
+            <source src="midia/Video.webm" type="video/webm">
+            <p>seu navegador nao tem compatibilidade com reproducao de video.</p>
+            <p>clique <a href="midia/video.mp4">aqui</a> para baixar o mp4</p>
+            <!--Essa forma de hospedar a depender pode consumir muitos dados entao esteja ciente de multiplicar os acessos mensais com o tamnho do arquivo e depois dividir po 1024 assim voce tera uma nocao de quantos bytes estaria sendo transferido-->
+        </video>
+        <h1>Inserindo videos do Youtube</h1>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=41yDvkEAoZlbbHbF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>

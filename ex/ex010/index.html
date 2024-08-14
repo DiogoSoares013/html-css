@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <hr>
+    <p>usando o repositorio do <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">guanabara</a></p> <!-- Aqui com as tags target e rel cria uma nova pagina com o link em questao -->
+    <p>usando o <a href="https://www.youtube.com/c/CursoemVídeo">canal do youtube cursoemvideo</a></p> <!-- aqui nao tem as tags target e rel assim a pagina sera substituida pelo link posto -->
+    
+    <h1>Usando links internos</h1>
+    <p>esta e a primeira pagina do site. Se voce quiser, pode acessar tambem a minha <a href="pag2.html" target="_self" rel="next">Segunda Pagina</a></p>
+    <!-- A tag <a> esta associada a âncora, por isso remete aos links -->
+    <p>Podemos tambem redirecionar para outros sites e indicar ao navegador que nao damos o "aval" para aquele lugar basta usar o rel nofollow</p>
+    <p>Voce tambem pode acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">pagina de noticias</a></p> <!--tambem podemos usar o target _self para indicar que a nova aba vai ser no proprio site, ou podemos deixar de colocar o target que acontecera o mesmo -->
+
+    <h1>Links para download</h1> <!--Alt click para escrever em 2 lugares ao mesmo tempo-->
+    <ul>
+        <li><a href="livro/meulivro.pdf"download="meulivro.pdf" type="application/pdf">baixar o livro em pdf</a></li> <!--podemos deixar com # entre a href para especificar que nao tem link-->
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">baixar o livro em zip</a></li> <!--para saber mais formas de application consultar as aulas do guanabara -->
+    </ul>
+    <p>a depender do navegador a tag type ou download faz com que o arquivo seja baixado imediatamente ao inves de abri-lo</p>
+
+</body>
+</html>
