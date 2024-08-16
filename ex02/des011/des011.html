@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio do Astronauta</title>
+    <title>Astronauta</title>
     <style>
-        .espaco{
-            margin: auto;
-            height: 1080px;
-            width: 1920px;
+        #espaco{
+            position: relative;
+            height: 100vh;
+            padding: 10px;
+
+            background-image: url(espaco.jpg);
+            background-size: 100% 100%;
+        }
+        #astronauta{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+
+            left: 50%;
+            top: 50%;
             
+            background-image: url(astronauta.png);
+            background-size: 100% 100%;
+            transform: translate(-50%,-50%);
         }
-        img{
-           margin: auto;
-        
-           inline-size: auto;
-        }
-        
     </style>
 </head>
 <body>
-    <div><!---Estilo box-->
-        <img src="espaco.jpg" alt="espaco" class="espaco">
-        <span class="astronauta"><img src="astronauta.png" alt="astronauta" ></span><!---Estilo inline-->
-    </div>
+    <section id="espaco">
+        <article id="astronauta">
+
+        </article>
+    </section>
 </body>
 </html>
